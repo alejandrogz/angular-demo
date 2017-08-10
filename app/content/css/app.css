@@ -28,6 +28,10 @@
   margin-top: 0px;
 }
 
+.article-top {
+  margin-top: 30px;
+}
+
 .tile {
   background-image: url('../img/tiles_proporcion.png');
   background-repeat: no-repeat;
@@ -42,9 +46,9 @@
   padding-left: 70px;
 }
 .tile-report{
-  background-image: url('../img/report.png');
+  background-image: url('../img/article.png');
   background-repeat: no-repeat;
-  background-position: -300px -150px;
+  background-position: 0px -150px;
 
   width: 742px;
   height: 2000px;
@@ -53,10 +57,12 @@
 
 
 .disposition{
-  position: relative;
   float: left;
+  position: relative;
 
 }
+
+
 /*.okty-navbar{
   align-items: center;
   width: 812px;
