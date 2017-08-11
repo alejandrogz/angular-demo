@@ -63,7 +63,7 @@
 }
 .in-columns{
   column-count: 3;
-  
+
 
 }
 
@@ -71,11 +71,3 @@
 
   display: inline-table;
 }
-
-
-/*.okty-navbar{
-  align-items: center;
-  width: 812px;
-  padding-left: 70px;
-  background-color: #023346;
-}*/

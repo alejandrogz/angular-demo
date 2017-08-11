@@ -72,13 +72,6 @@
             }
         ];
 
-
-        vm.learnMore = {
-          background_position: '50px -1840px',
-          height: '25px',
-          width: '45px'
-        };
-
         vm.gotoSalesforce = gotoSalesforce;
 
         function gotoSalesforce(tile) {
