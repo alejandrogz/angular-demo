@@ -17,22 +17,22 @@
                 type: 'ux_ui'
             },
             {
-                id: 'mobile1',
-                background_position: '0px -370px',
-                height: '105px',
-                type: 'mobile'
-            },
-            {
-                id: 'ux_ui2',
-                background_position: '0px -475px',
-                height: '240px',
-                type: 'salesforce'
-            },
-            {
                 id: 'heroku',
                 background_position: '0px -720px',
                 height: '237px',
                 type: 'heroku'
+            },
+            {
+                id: 'mobile3',
+                background_position: '0px -1715px',
+                height: '109px',
+                type: 'mobile'
+            },
+            {
+                id: 'mobile1',
+                background_position: '0px -370px',
+                height: '105px',
+                type: 'mobile'
             },
             {
                 id: 'mobile2',
@@ -47,22 +47,22 @@
                 type: 'salesforce'
             },
             {
-                id: 'salesforce2',
-                background_position: '0px -1335px',
-                height: '124px',
-                type: 'salesforce'
-            },
-            {
-                id: 'mobile3',
-                background_position: '0px -1715px',
-                height: '109px',
-                type: 'mobile'
-            },
-            {
                 id: 'mobile4',
                 background_position: '0px -1827px',
                 height: '109px',
                 type: 'mobile'
+            },
+            {
+                id: 'ux_ui2',
+                background_position: '0px -475px',
+                height: '240px',
+                type: 'ux_ui'
+            },
+            {
+                id: 'salesforce2',
+                background_position: '0px -1335px',
+                height: '124px',
+                type: 'salesforce'
             },
             {
                 id: 'ux_ui3',
@@ -71,6 +71,14 @@
                 type: 'ux_ui'
             }
         ];
+
+
+        vm.learnMore = {
+          background_position: '50px -1840px',
+          height: '25px',
+          width: '45px'
+        };
+
         vm.gotoSalesforce = gotoSalesforce;
 
         function gotoSalesforce(tile) {
@@ -78,5 +86,6 @@
             angular.element('li a[href="#' + tile.type + '"]').parent().addClass('active');
             $state.go(tile.type, {tile_id: tile.id});
         }
+
     }
 })();

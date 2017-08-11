@@ -1,11 +1,33 @@
 
-<div>
+<header>
   <h3>WELCOME TO OKTYBLOG</h3>
+</header>
+
+
+
+<div class="in-columns">
+  <div id="{{tile.id}}"
+       class="disposition tile brick"
+       ng-repeat="tile in vm.tiles"
+       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
+       ng-click="vm.gotoSalesforce(tile)"
+       >
+  </div>
 </div>
-<div id="{{tile.id}}"
-     class="disposition tile"
-     ng-repeat="tile in vm.tiles"
-     style="background-position: {{tile.background_position}}; height: {{tile.height}}"
-     ng-click="vm.gotoSalesforce(tile)"
-     >
-</div>
+
+
+<footer>
+  <div class="">
+    <img src="../content/img/learn.png">
+
+    <p>
+      <small>
+          Lorem ipsum dolor sit amet, ndwoejd ojwdoej vu owjdowejdo ojdowejd
+          dweidbiwedni  bat iwnedi niweweuinfiewn  yec inwefienw inwifniwe
+          hwodnfdfldnc nou de caecmi ncoscdwcm ouy malesuada. Duis nec nis
+          ccmomcowm cayt cmosdccv cmuxsx cncnjcnwucnu tellus pulivan scelerique
+          id nec nibh
+      </small>
+    </p>
+  </div>
+</footer>
