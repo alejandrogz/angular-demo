@@ -5,45 +5,27 @@
 </header>
 
 
-<div class="row">
-  
-  <div id="{{tile.id}}"
-       class="disposition tile span4 brick"
-       ng-repeat="tile in vm.tiles"
-       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
-       ng-click="vm.gotoSalesforce(tile)"
-       >
+
+
+  <div id="{{brick.id}}"  draggable="true" masonry load-images="true">
+
+       <div class="masonry-brick disposition" ng-repeat="brick in vm.tiles" ng-click="vm.gotoSalesforce(brick) " >
+              <img ng-src="{{ brick.src }}" alt="A masonry brick">
+      </div>
   </div>
 
-</div>
 
 
-<div class="row">
-  <div id="{{tile.id}}"
-       class="disposition tile span4 brick"
-       ng-repeat="tile in vm.tiles2"
-       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
-       ng-click="vm.gotoSalesforce(tile)"
-       >
-  </div>
-</div>
 
-<div class="row">
-  <div id="{{tile.id}}"
-       class="disposition tile span4 brick"
-       ng-repeat="tile in vm.tiles3"
-       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
-       ng-click="vm.gotoSalesforce(tile)"
-       >
-  </div>
-</div>
+
+
 
 
 <footer>
   <div class="btn btn-success" href = "#parrafo">
-    
+
     Learn More
-    
+
   </div>
 
   <p id="parrafo" align = "left" style = "margin-top:40px">

@@ -11,12 +11,11 @@
         $stateProvider.state('salesforce', {
             parent: 'app',
             url: "/salesforce",
-            params: {
-                id: null
-            },
             views: {
-                'content@': {
+                'content-salesforce@': {
                     templateUrl: 'salesforce/salesforce.html',
+                    controller: 'SalesforceController',
+                    controllerAs: 'svm'
                 }
             }
         })

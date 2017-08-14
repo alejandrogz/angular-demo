@@ -15,7 +15,7 @@
                 id: null
             },
             views: {
-                'content@': {
+                'content-heroku@': {
                     templateUrl: 'heroku/heroku.html',
                 }
             }

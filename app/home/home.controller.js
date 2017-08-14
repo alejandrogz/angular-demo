@@ -12,87 +12,77 @@
         vm.tiles = [
             {
                 id: 'ux_ui1',
-                background_position: '0px -125px',
-                height: '236px',
-                type: 'ux_ui'
+
+                type: 'ux_ui',
+                src: 'content/img/image1.png'
             },
             {
                 id: 'mobile1',
-                background_position: '0px -370px',
-                height: '105px',
-                type: 'mobile'
+
+                type: 'mobile',
+                src: 'content/img/image2.png'
             },
              {
                 id: 'ux_ui2',
-                background_position: '0px -475px',
-                height: '240px',
-                type: 'ux_ui'
-            }
-           
-            
-            
-        ];
+
+                type: 'ux_ui',
+                src: 'content/img/image3.png'
+            },
+            {
+               id: 'heroku',
+
+               type: 'heroku',
+               src: 'content/img/image4.png'
+           },
 
 
-        vm.tiles2 = [
-             {
-                id: 'heroku',
-                background_position: '0px -720px',
-                height: '237px',
-                type: 'heroku'
-            },
-           
-            
-            {
-                id: 'mobile2',
-                background_position: '0px -960px',
-                height: '248px',
-                type: 'mobile'
-            },
-            {
-                id: 'salesforce1',
-                background_position: '0px -1210px',
-                height: '124px',
-                type: 'salesforce'
-            },
-            {
-                id: 'mobile4',
-                background_position: '0px -1827px',
-                height: '109px',
-                type: 'mobile'
-            },
-            
-        ];
+           {
+               id: 'mobile2',
 
-        vm.tiles3 = [
-            {
-                id: 'mobile3',
-                background_position: '0px -1715px',
-                height: '109px',
-                type: 'mobile'
-            },
-            {
-                id: 'salesforce2',
-                background_position: '0px -1335px',
-                height: '124px',
-                type: 'salesforce'
-            },
-             {
-                id: 'ux_ui3',
-                background_position: '0px -1470px',
-                height: '239px',
-                type: 'ux_ui'
-            }
+               type: 'mobile',
+               src: 'content/img/image5.png'
+           },
+           {
+               id: 'salesforce1',
 
-            
-        ];
+               type: 'salesforce',
+               src: 'content/img/image6.png'
+           },
+           {
+               id: 'mobile4',
+
+               type: 'mobile',
+               src: 'content/img/image7.png'
+           },
+           {
+               id: 'mobile3',
+
+               type: 'mobile',
+               src: 'content/img/image8.png'
+           },
+           {
+               id: 'salesforce2',
+
+               type: 'salesforce',
+               src: 'content/img/image9.png'
+           },
+            {
+               id: 'ux_ui3',
+
+               type: 'ux_ui',
+               src: 'content/img/image10.png'
+           }
+         ];
+
+
+
 
         vm.gotoSalesforce = gotoSalesforce;
 
-        function gotoSalesforce(tile) {
+        function gotoSalesforce(brick) {
             angular.element('li.active').removeClass('active');
-            angular.element('li a[href="#' + tile.type + '"]').parent().addClass('active');
-            $state.go(tile.type, {tile_id: tile.id});
+            angular.element('li a[href="#' + brick.type + '"]').parent().addClass('active');
+            $state.go(brick.type, {brick_id: brick.id});
         }
 
     }

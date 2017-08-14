@@ -15,7 +15,7 @@
                 id: null
             },
             views: {
-                'content@': {
+                'content-uxui@': {
                     templateUrl: 'ux_ui/ux_ui.html',
                 }
             }

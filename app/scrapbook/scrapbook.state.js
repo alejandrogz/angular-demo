@@ -15,7 +15,7 @@
                 id: null
             },
             views: {
-                'content@': {
+                'content-scrapbook@': {
                     templateUrl: 'scrapbook/scrapbook.html',
                 }
             }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="oktyBlog">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +11,15 @@
   <link rel="stylesheet" href="content/css/app.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/ev-emitter/ev-emitter.js"></script>
+
 </head>
-<body ng-app="oktyBlog">
+<body >
 
-  <div class="container" ui-view="header"></div>
+  <div class="top" ui-view="header"></div>
 
-  <div class="container container-top" align="center">
-    <ul id="menu-tabs" class="nav nav-pills" style="width: 100%; padding-left: 70px; background-color: #023346;">
+  <div id = "tab-pane" class="container container-top" align="center" style="width: 100%; background-color: #023346;">
+    <ul id="menu-tabs" class="nav nav-pills" style=" padding-left: 70px; ">
       <li role="presentation" class="active"><a data-toggle="tab" href="#home">Home</a></li>
       <li role="presentation"><a data-toggle="tab" href="#salesforce">Salesforce</a></li>
       <li role="presentation"><a data-toggle="tab" href="#heroku">Heroku</a></li>
@@ -27,32 +29,48 @@
     </ul>
   </div>
   <div class="container tab-content" align="center">
-
+<!-- Home Page -->
     <div id="home" class="tab-pane active page-def ">
-        <div ui-view="content " ></div>
+        <div ui-view="content" ></div>
     </div>
+<!-- Home page ending -->
 
-
+<!-- Salesforce page -->
     <div id="salesforce" class="tab-pane page-def">
-      <div ui-view="content"></div>
+      <div ui-view="content-salesforce"></div>
     </div>
+<!-- Salesforce page ending -->
+
     <div id="heroku" class="tab-pane page-def" >
-      <div ui-view="content"></div>
+      <div ui-view="content-heroku"></div>
     </div>
     <div id="mobile" class="tab-pane page-def">
-        <div ui-view="content"></div>
+        <div ui-view="content-mobile"></div>
     </div>
     <div id="ux_ui" class="tab-pane page-def" >
-      <div ui-view="content"></div>
+      <div ui-view="content-uxui"></div>
     </div>
     <div id="scrapbook" class="tab-pane page-def">
-      <div ui-view="content"></div>
+      <div ui-view="content-scrapbook"></div>
     </div>
   </div>
 
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/desandro-matches-selector/matches-selector.js"></script>
+  <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+  <script src="bower_components/get-size/get-size.js"></script>
+  <script src="bower_components/outlayer/item.js"></script>
+  <script src="bower_components/outlayer/outlayer.js"></script>
+  <script src="bower_components/masonry/masonry.js"></script>
+  <script src="bower_components/jquery-bridget/jquery-bridget.js"></script>
+
+  <!-- optional -->
+  <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+  <!-- /optional -->
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="app.module.js"></script>
@@ -62,11 +80,15 @@
   <script src="heroku/heroku.state.js"></script>
   <script src="mobile/mobile.state.js"></script>
   <script src="salesforce/salesforce.state.js"></script>
+  <script src="salesforce/salesforce.controller.js"></script>
   <script src="scrapbook/scrapbook.state.js"></script>
   <script src="ux_ui/ux_ui.state.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script type="text/javascript">
+    jQueryBridget( 'masonry', Masonry, $ );
+  </script>
 
 </body>
 </html>

@@ -15,7 +15,7 @@
                 id: null
             },
             views: {
-                'content@': {
+                'content-mobile@': {
                     templateUrl: 'mobile/mobile.html',
                 }
             }

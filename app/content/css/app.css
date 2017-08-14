@@ -42,11 +42,11 @@
 
 }
 .page-def{
-  width: 812px;
+  width: 1124px;
   padding-left: 70px;
 }
 .tile-report{
-  background-image: url('../img/article.png');
+  background-image: url('../img/article1.png');
   background-repeat: no-repeat;
   background-position: 0px -150px;
 
@@ -57,9 +57,8 @@
 
 
 .disposition{
-  float: left;
-  position: relative;
-
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 
@@ -67,7 +66,7 @@
 
   display: block;
 }
- 
+
 
 .top{
   background-color: #023346;
@@ -75,4 +74,3 @@
   height: 50px;
 
 }
-
