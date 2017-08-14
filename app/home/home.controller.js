@@ -17,23 +17,32 @@
                 type: 'ux_ui'
             },
             {
-                id: 'heroku',
-                background_position: '0px -720px',
-                height: '237px',
-                type: 'heroku'
-            },
-            {
-                id: 'mobile3',
-                background_position: '0px -1715px',
-                height: '109px',
-                type: 'mobile'
-            },
-            {
                 id: 'mobile1',
                 background_position: '0px -370px',
                 height: '105px',
                 type: 'mobile'
             },
+             {
+                id: 'ux_ui2',
+                background_position: '0px -475px',
+                height: '240px',
+                type: 'ux_ui'
+            }
+           
+            
+            
+        ];
+
+
+        vm.tiles2 = [
+             {
+                id: 'heroku',
+                background_position: '0px -720px',
+                height: '237px',
+                type: 'heroku'
+            },
+           
+            
             {
                 id: 'mobile2',
                 background_position: '0px -960px',
@@ -52,11 +61,15 @@
                 height: '109px',
                 type: 'mobile'
             },
+            
+        ];
+
+        vm.tiles3 = [
             {
-                id: 'ux_ui2',
-                background_position: '0px -475px',
-                height: '240px',
-                type: 'ux_ui'
+                id: 'mobile3',
+                background_position: '0px -1715px',
+                height: '109px',
+                type: 'mobile'
             },
             {
                 id: 'salesforce2',
@@ -64,12 +77,14 @@
                 height: '124px',
                 type: 'salesforce'
             },
-            {
+             {
                 id: 'ux_ui3',
                 background_position: '0px -1470px',
                 height: '239px',
                 type: 'ux_ui'
             }
+
+            
         ];
 
         vm.gotoSalesforce = gotoSalesforce;

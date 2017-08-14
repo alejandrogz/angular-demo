@@ -5,11 +5,33 @@
 </header>
 
 
-
-<div class="in-columns">
+<div class="row">
+  
   <div id="{{tile.id}}"
-       class="disposition tile brick"
+       class="disposition tile span4 brick"
        ng-repeat="tile in vm.tiles"
+       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
+       ng-click="vm.gotoSalesforce(tile)"
+       >
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div id="{{tile.id}}"
+       class="disposition tile span4 brick"
+       ng-repeat="tile in vm.tiles2"
+       style="background-position: {{tile.background_position}}; height: {{tile.height}}"
+       ng-click="vm.gotoSalesforce(tile)"
+       >
+  </div>
+</div>
+
+<div class="row">
+  <div id="{{tile.id}}"
+       class="disposition tile span4 brick"
+       ng-repeat="tile in vm.tiles3"
        style="background-position: {{tile.background_position}}; height: {{tile.height}}"
        ng-click="vm.gotoSalesforce(tile)"
        >
@@ -18,10 +40,13 @@
 
 
 <footer>
-  <div class="">
-    <img src="../content/img/learn.png">
+  <div class="btn btn-success" href = "#parrafo">
+    
+    Learn More
+    
+  </div>
 
-    <p align = "left" style = "margin-top:40px">
+  <p id="parrafo" align = "left" style = "margin-top:40px">
       <small>
           Lorem ipsum dolor sit amet, ndwoejd ojwdoej vu owjdowejdo ojdowejd
           dweidbiwedni  bat iwnedi niweweuinfiewn  yec inwefienw inwifniwe
@@ -30,5 +55,4 @@
           id nec nibh
       </small>
     </p>
-  </div>
 </footer>
